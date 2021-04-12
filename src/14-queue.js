@@ -13,23 +13,15 @@ const ListNode = require('../extensions/list-node');
 
 class Queue {
   get size() {
-    let currentItem = Queue;
-    let nextItem = Queue.next;
-    let counter = 0;
-    while (currentItem.next === null) {
-      currentItem = nextItem;
-      nextItem = nextItem.next;
-      counter++;
-    }
-    return counter;
+    throw new Error('Not implemented');
   }
 
-  enqueue(element) {
+  enqueue(/*element*/) {
     return new ListNode(element);
   }
 
   dequeue() {
-
+    throw new Error('Not implemented');
   }
 }
 
